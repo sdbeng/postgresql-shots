@@ -12,3 +12,20 @@ Project 2 cs50, work in progress
 - boolean
 - enum
 - ...
+
+### Constraints
+
+- not null
+- unique
+- primary key
+- default
+- check
+- ...
+
+### Functions
+
+-sum
+-count
+-min
+-max
+-avg
