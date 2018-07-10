@@ -108,3 +108,34 @@ $ echo "bind "^R" em-inc-search-prev" > $HOME/.editrc
 $ source $HOME/.editrc
 PostgreSQL Exercises: An awesome resource to learn to learn SQL, teaching you with simple examples in a great visual way. Highly recommended.
 A Performance Cheat Sheet for PostgreSQL: Great explanations of EXPLAIN, EXPLAIN ANALYZE, VACUUM, configuration parameters and more. Quite interesting if you need to tune-up a postgres setup.
+
+## commands ii
+
+```
+CREATE TABLE flights (
+ id SERIAL PRIMARY KEY,
+ origin VARCHAR NOT NULL,
+ destination VARCHAR NOT NULL,
+ duration INTEGER NOT NULL
+);
+
+INSERT INTO flights
+ (origin, destination, duration)
+ VALUES ('New York', 'London', 415);
+
+ INSERT INTO flights
+ (origin, destination, duration)
+ VALUES ('New York', 'London', 415);
+
+SELECT * FROM flights;
+
+SELECT origin, destination FROM flights;
+
+SELECT * FROM flights WHERE id = 3;
+
+SELECT * FROM flights WHERE origin = 'New York';
+SELECT * FROM flights WHERE duration > 500;
+
+SELECT * FROM flights
+WHERE destination = 'Paris' AND duration > 500;
+```
