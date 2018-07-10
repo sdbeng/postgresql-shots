@@ -168,3 +168,20 @@ UPDATE flights
 • ORDER BY
 • GROUP BY
 • HAVING
+
+## foreign keys
+
+## types of joins
+
+• JOIN / INNER JOIN
+• LEFT OUTER JOIN
+• RIGHT OUTER JOIN
+• FULL OUTER JOIN
+
+- create index
+- nested queries
+
+```
+SELECT flight_id FROM passengers
+GROUP BY flight_id HAVING COUNT(*) > 1;
+```
