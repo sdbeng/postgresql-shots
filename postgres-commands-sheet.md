@@ -138,4 +138,33 @@ SELECT * FROM flights WHERE duration > 500;
 
 SELECT * FROM flights
 WHERE destination = 'Paris' AND duration > 500;
+
+SELECT * FROM flights
+WHERE destination = 'Paris' OR duration > 500;
+
+SELECT * FROM flights
+WHERE origin IN ('New York', 'Lima');
+
+-now when i need to build a partial search
+SELECT * FROM flights
+WHERE origin LIKE '%a%';
 ```
+
+### update and delete data
+
+```
+UPDATE flights
+ SET duration = 430
+ WHERE origin = 'New York'
+ AND destination = 'London';
+
+ DELETE FROM countries
+ WHERE destination = 'Tokyo';
+```
+
+## Other Clauses
+
+• LIMIT
+• ORDER BY
+• GROUP BY
+• HAVING
